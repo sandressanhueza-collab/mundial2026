@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C9A84C;
+  --gold2: #E8C97A;
+  --gold3: #F5DFA0;
+  --bg: #07070E;
+  --bg2: #0D0D1A;
+  --bg3: #111120;
+  --bg4: #16162A;
+  --glass: rgba(255,255,255,0.04);
+  --glass2: rgba(255,255,255,0.025);
+  --glass3: rgba(201,168,76,0.06);
+  --txt: #EEEEF5;
+  --txt2: #9090B0;
+  --border: rgba(255,255,255,0.07);
+  --border2: rgba(201,168,76,0.2);
+  --blue: #4F8EF7;
+  --green: #30D158;
+  --red: #FF453A;
+  --purple: #BF5AF2;
+  --r: 12px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--txt);
+  overflow-x: hidden;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.condensed { font-family: 'Barlow Condensed', sans-serif; }
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(201,168,76,0.25); border-radius: 3px; }
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeup { animation: fadeUp 0.5s ease both; }
+
+/* Match card channel badges */
+.ch { font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 4px; white-space: nowrap; letter-spacing: .3px; }
+.ch-CHV { background: rgba(0,85,200,0.2); color: #93C5FD; border: 1px solid rgba(0,85,200,0.3); }
+.ch-DSP { background: rgba(245,124,0,0.18); color: #FFB340; border: 1px solid rgba(245,124,0,0.25); }
+.ch-Dp  { background: rgba(48,209,88,0.12); color: #80EFAA; border: 1px solid rgba(48,209,88,0.2); }
+
+/* Tag styles */
+.t-inaugural { background: rgba(255,69,58,0.15); color: #FF6B6B; }
+.t-argentina { background: rgba(116,172,223,0.15); color: #93C5FD; }
+.t-brasil    { background: rgba(48,209,88,0.12); color: #80EFAA; }
+.t-uruguay   { background: rgba(79,142,247,0.15); color: #93C5FD; }
+.t-clasico   { background: rgba(255,149,0,0.15); color: #FFB340; }
+.t-latam     { background: rgba(191,90,242,0.12); color: #D090FF; }
+.t-final     { background: rgba(201,168,76,0.15); color: var(--gold); }
