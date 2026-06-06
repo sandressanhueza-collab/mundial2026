@@ -88,12 +88,6 @@ export default function PredictionsSection() {
                 {ph.label}
               </div>
               {ph.matches.map((m, i) => (
-                <div key={i} style={{
-                  background: m.champion ? "rgba(201,168,76,0.08)" : "var(--glass2)",
-                  border: m.champion ? "1px solid rgba(201,168,76,0.4)" : "1px solid var(--border)",
-                  borderRadius: 8, padding: m.champion ? "18px 11px" : "9px 11px",
-                  marginBottom: 9, fontSize: 12, textAlign: m.champion ? "center" : undefined
-                }}>
                   {m.champion ? (
                     <>
                       <div style={{ fontSize: 28, marginBottom: 6 }}>🇦🇷</div>

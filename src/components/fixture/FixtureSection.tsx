@@ -1,9 +1,9 @@
 "use client";
-
-import { useState, useMemo } from "react";
-import { MATCHES, FLAGS, LATAM_TEAMS } from "@/data";
-import type { Match } from "@/types";
-
+interface GroupStageProps {
+  id: string;
+  title: string;
+  matches: any[];
+}
 const PHASES = ["Grupos", "Ronda de 32", "Octavos de Final", "Cuartos de Final", "Semifinal", "3er Lugar", "Final"];
 const TEAMS = ["Argentina", "Brasil", "Uruguay", "Colombia", "Ecuador", "Paraguay", "México", "España", "Francia", "Alemania", "Portugal", "Inglaterra"];
 
